@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Social Media Blog</h1>
+  </header>
+  <main>
+    <section id="create-post">
+      <h2>Create a New Post</h2>
+      <input type="text" id="post-title" placeholder="Title (Max 50 characters)" maxlength="50" required />
+      <textarea id="post-content" placeholder="Write your post... (Max 200 characters)" maxlength="200" required></textarea>
+      <input type="text" id="post-author" placeholder="Author (Max 30 characters)" maxlength="30" required />
+      <button id="post-button">Post</button>
+    </section>
+    <section id="posts-container">
+      <h2>Recent Posts</h2>
+      <div id="post-list"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Social Media Blog. All rights reserved.</p>
+  </footer>
+  
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+  <script src="app.js"></script>
+  
+</body>
+</html>
+
